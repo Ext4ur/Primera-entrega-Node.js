@@ -68,10 +68,17 @@ let id = argv.id;
 let nombre = argv.nombre;
 let cc = argv.cc;
 if (id == null){
-    for (var i = 0; i < cursos.length; i+=1){
-        console.log("Curso #" + cursos[i].id + "    Nombre: " + cursos[i].nombre + "    Duración: " + cursos[i].duracion + 
-        " horas    Valor: $" + cursos[i].valor);
+    function printer(i){
+        if(i < 5){
+            setTimeout(function(){
+            console.log("Curso #" + cursos[i].id + "    Nombre: " + cursos[i].nombre + "    Duración: " + cursos[i].duracion + 
+                        " horas    Valor: $" + cursos[i].valor);
+            i++;
+            printer(i);
+        }, 2000);
+       }
     }
+    printer(0);
 }
 else{
     let curso = cursos.find(curso => curso.id == curso.id);
