@@ -1,0 +1,15 @@
+{
+  "name": "primera-entrega",
+  "version": "1.0.1",
+  "description": "El primer trabajo del curso Node.js",
+  "main": "TdeA_EC.js",
+  "dependencies": {
+    "yargs": "^13.2.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Esteban Rojas Henao ext4ur@gmail.com",
+  "license": "ISC"
+}
