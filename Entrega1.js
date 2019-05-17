@@ -69,7 +69,7 @@ let nombre = argv.nombre;
 let cc = argv.cc;
 if (id == null){
     function printer(i){
-        if(i < 5){
+        if(i < cursos.length){
             setTimeout(function(){
             console.log("Curso #" + cursos[i].id + "    Nombre: " + cursos[i].nombre + "    Duración: " + cursos[i].duracion + 
                         " horas    Valor: $" + cursos[i].valor);
